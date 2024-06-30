@@ -24,16 +24,218 @@ import ProductThree from "@/components/product/ProductThree";
 import ProductOne from "@/components/product/ProductOne";
 
 const HomeFurniture = () => {
+  debugger;
   const pathname = usePathname();
   const split = pathname.split("/");
-  const pageCategory = split[split.length - 1];
+  //   const pageCategory = split[split.length - 1];
+  const pageCategory = "Furniture";
   const furnitureProduct = ProductsData.filter(
-    (data) => slugify(data.pCate) === pageCategory
+    (data) => data.pCate === "Furniture"
   );
+
   const transparentProduct = ProductsData.filter(
-    (data) =>
-      slugify(data.pCate) === pageCategory && data.thumbnailTransparent === true
+    (data) => data.pCate === pageCategory && data.thumbnailTransparent === true
   );
+
+  const test_transparentProduct = transparentProduct.slice(0, 4);
+  const best_products = [
+    {
+      id: 77,
+      title: "Flexo scoter1",
+      thumbnail:
+        "/images/product/furniture/flexo_teble/color rubber black legs.JPG",
+      gallery: [
+        "/images/product/furniture/product-1.png",
+        "/images/product/furniture/product-2.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Round Table"],
+      price: 80,
+      salePrice: 60,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 78,
+      title: "flexo acer",
+      thumbnail:
+        "/images/product/furniture/flexo_teble/color rubber white legs.JPG",
+      gallery: [
+        "/images/product/furniture/product-2.png",
+        "/images/product/furniture/product-6.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Vintage Table"],
+      price: 90,
+      salePrice: 70,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 79,
+      title: "flexo xr",
+      thumbnail: "/images/product/furniture/flexo_teble/E6 with black top.JPG",
+      gallery: [
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-7.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Round Table"],
+      price: 85,
+      salePrice: 75,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 80,
+      title: "flexo woodi",
+      thumbnail: "/images/product/furniture/flexo_teble/E6 wood top.JPG",
+      gallery: [
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-8.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Arm Chair"],
+      price: 105,
+      salePrice: 100,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+  ];
+
+  debugger;
   const exploreProduct = mapInSlices(furnitureProduct, 8);
 
   return (
@@ -42,13 +244,13 @@ const HomeFurniture = () => {
       <main className="main-wrapper">
         <CategoryFurniture />
         <BannerFive />
-        <Section
+        {/* <Section
           pClass="axil-new-arrivals-product-area fullwidth-container flash-sale-area pb--0"
           containerClass="ml--xxl-0"
           borderBottom="pb--50"
           style={{ direction: "rtl" }}
-        >
-          <div
+        > */}
+        {/* <div
             style={{ direction: "rtl" }}
             className="d-md-flex align-items-end flash-sale-section"
           >
@@ -62,44 +264,42 @@ const HomeFurniture = () => {
             <div className="sale-countdown countdown">
               <CountDown date="2024-10-01T23:59:59" />
             </div>
-          </div>
+          </div> */}
 
-          <div style={{ direction: "rtl" }}>
-            <SlickSlider
-              style={{ direction: "rtl" }}
-              class="slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide"
-              slidesToShow={4}
-              infinite={false}
-              responsive={[
-                {
-                  breakpoint: 1400,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                  },
+        {/* <SlickSlider
+            style={{ direction: "rtl" }}
+            class="slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide"
+            slidesToShow={4}
+            infinite={false}
+            responsive={[
+              {
+                breakpoint: 1400,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
                 },
-                {
-                  breakpoint: 992,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                  },
+              },
+              {
+                breakpoint: 992,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
                 },
-                {
-                  breakpoint: 575,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  },
+              },
+              {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
                 },
-              ]}
-            >
-              {furnitureProduct.map((data) => (
-                <ProductFour product={data} key={data.id} />
-              ))}
-            </SlickSlider>
-          </div>
-        </Section>
+              },
+            ]}
+          >
+            {furnitureProduct.map((data) => (
+              <ProductFour product={data} key={data.id} />
+            ))}
+          </SlickSlider> */}
+        {/* </Section> */}
         <Section pClass="pb--0" borderBottom="pb--50">
           <SectionTitle
             title="מוצרים נבחרים"
@@ -108,7 +308,7 @@ const HomeFurniture = () => {
             subColor="highlighter-secondary"
           />
           <div className="row">
-            {transparentProduct.slice(0, 8).map((data) => (
+            {best_products.map((data) => (
               <div className="col-xl-3 col-lg-4 col-sm-6" key={data.id}>
                 <ProductSeven product={data} />
               </div>
@@ -158,12 +358,12 @@ const HomeFurniture = () => {
         </Section> */}
         <PosterOne
           subtitleIcon="far fa-couch"
-          title="Decorate Your House with Us"
-          thumbnail="/images/product/poster/poster-07.png"
+          title="מהפיכת הארגונומיה במשרד"
+          thumbnail="/images/product/furniture/flexo_teble/IMG_1831.JPG"
           thumbWidth={661}
           thumbHeight={502}
         />
-        <Section pClass="pb--0" borderBottom="pb--80">
+        {/* <Section pClass="pb--0" borderBottom="pb--80">
           <SectionTitle
             title="Explore our Products"
             subtitle="Our Products"
@@ -199,7 +399,7 @@ const HomeFurniture = () => {
               </Link>
             </div>
           </div>
-        </Section>
+        </Section> */}
         <WhyChoose />
         <TestimonialOne />
         <Section pClass="pb--50">
