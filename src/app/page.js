@@ -17,7 +17,7 @@ export const metadata = {
 const HomeOne = () => {
   return (
     <>
-      <SplashHeader />
+      {/* <SplashHeader /> */}
       <main className="main-wrapper pv-main-wrapper">
         {/* <SplashBanner /> */}
         {/* <SplashHomeDemo /> */}

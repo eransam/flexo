@@ -160,6 +160,7 @@ Slick Style
             }
         }
         .campaign-content {
+            direction: rtl;
             margin: 0 50px;
             @media #{$small-mobile} {
                 margin: 0 30px;

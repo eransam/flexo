@@ -29,7 +29,7 @@ const FooterData = {
             label: "Quick Link",
             linkList: [
                 {
-                    name: "About Us",
+                    name: "עלינו",
                     url: "/about"
                 },
                 {
@@ -50,7 +50,7 @@ const FooterData = {
             label: "Quick Link",
             linkList: [
                 {
-                    name: "About Us",
+                    name: "עלינו",
                     url: "/about"
                 },
                 {

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { mapInSlices } from "@/utils";
 
 const WhoWeAre = () => {
-	const whoAreGallery = mapInSlices(WhoAreGallery, 2);
+  const whoAreGallery = mapInSlices(WhoAreGallery, 2);
 
   return (
     <section className="axil-about-area about-style-3">
@@ -12,8 +12,8 @@ const WhoWeAre = () => {
         <div className="row align-items-center">
           <div className="col-lg-7">
             <SectionTitle
-              title="Who we are"
-              subtitle="About Us"
+              title="מי אנחנו"
+              subtitle="עלינו"
               subtitleIcon="fal fa-star"
               subColor="highlighter-primary2"
             />
@@ -32,18 +32,18 @@ const WhoWeAre = () => {
           <div className="col-lg-5">
             <div className="about-gallery">
               <div className="row row--10">
-				{whoAreGallery.map((thumbnails, thumbsIndex) => (
-					<div className="col-6" key={thumbsIndex}>
-						{thumbnails.map((data, index) => (
-							<div
-							className={`thumbnail thumbnail-${index + 1}`}
-							key={index}
-							>
-							<Image src={data} alt="About" fill />
-						  </div>
-						))}
-					</div>
-				))}
+                {whoAreGallery.map((thumbnails, thumbsIndex) => (
+                  <div className="col-6" key={thumbsIndex}>
+                    {thumbnails.map((data, index) => (
+                      <div
+                        className={`thumbnail thumbnail-${index + 1}`}
+                        key={index}
+                      >
+                        <Image src={data} alt="About" fill />
+                      </div>
+                    ))}
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -4,10 +4,10 @@ import SlickSlider from "@/components/elements/SlickSlider";
 const CampaignSlider = () => {
   const SlideData = [
     {
-      title: "STUDENT NOW GET 10% OFF",
+      title: "10% הנחה על הקנייה השנייה",
     },
     {
-      title: "FLAT SELL GET 10% OFF",
+      title: "מתחרים בכל הצעת מחיר",
     },
   ];
 
@@ -24,8 +24,7 @@ const CampaignSlider = () => {
                 <div key={index}>
                   <div className="campaign-content" key={index}>
                     <p>
-                      {data.title} : {" "}
-                      <Link href="/shop">GET OFFER</Link>
+                      {data.title}   <Link href="/shop">לקנייה</Link>
                     </p>
                   </div>
                 </div>
