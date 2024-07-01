@@ -59,7 +59,7 @@ const FooterTwo = () => {
               ))}
               <div className="col-lg-3 col-sm-6">
                 <div className="axil-footer-widget">
-                  <h5 className="widget-title">Download App</h5>
+                  <h5 className="widget-title">הורד את האפליקציה</h5>
                   <div className="inner">
                     <span>{FooterData.footerAppInfo.title}</span>
                     <div className="download-btn-group">

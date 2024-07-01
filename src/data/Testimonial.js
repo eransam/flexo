@@ -1,32 +1,32 @@
 const TestimonialData = [
-    {
-        authorName: "James C. Anderson",
-        authorThumb: "/images/testimonial/image-1.png",
-        authorDesignation: "Head Of Idea",
-        reviewText: "“ It’s amazing how much easier it has been to meet new people and create instantly non connections. I have the exact same personal the only thing that has changed is my mind set and a few behaviors. “"
+  {
+    authorName: "יעקב כהן",
+    authorThumb: "/images/testimonial/image-1.png",
+    authorDesignation: "לקוח פרטי",
+    reviewText:
+      "“ אני מאוד מרוצה מהשולחן הארגונומי שרכשתי. השירות היה מהיר ואדיב, והשולחן עצמו נוח ומעוצב בצורה מעולה. ממליץ בחום! “",
+  },
+  {
+    authorName: "מירב לוי",
+    authorThumb: "/images/testimonial/image-2.png",
+    authorDesignation: "לקוח פרטי",
+    reviewText:
+      "“ השולחן הארגונומי שקניתי מהחברה הזו הוא בדיוק מה שחיפשתי. איכות מעולה ושירות מקצועי. תודה רבה! “",
+  },
+  {
+    authorName: "אבי מזרחי",
+    authorThumb: "/images/testimonial/image-3.png",
+    authorDesignation: "לקוח פרטי",
+    reviewText:
+      "“ לאחר שימוש של כמה חודשים בשולחן הארגונומי שרכשתי, אני יכול לומר בוודאות שהוא אחד המוצרים הכי טובים שקניתי. תודה על שירות מצוין ומוצר איכותי! “",
+  },
+  {
+    authorName: "דנה שקד",
+    authorThumb: "/images/testimonial/image-2.png",
+    authorDesignation: "לקוח פרטי",
+    reviewText:
+      "“ אני משתמשת בשולחן הארגונומי בעבודה היומיומית שלי ואני מאוד מרוצה. המוצר איכותי ונוח, והשירות היה מעל ומעבר. ממליצה לכל מי שמחפש שולחן איכותי ונוח. “",
+  },
+];
 
-    },
-    {
-        authorName: "James C. Anderson",
-        authorThumb: "/images/testimonial/image-2.png",
-        authorDesignation: "Head Of Idea",
-        reviewText: "“ It’s amazing how much easier it has been to meet new people and create instantly non connections. I have the exact same personal the only thing that has changed is my mind set and a few behaviors. “"
-
-    },
-    {
-        authorName: "James C. Anderson",
-        authorThumb: "/images/testimonial/image-3.png",
-        authorDesignation: "Head Of Idea",
-        reviewText: "“ It’s amazing how much easier it has been to meet new people and create instantly non connections. I have the exact same personal the only thing that has changed is my mind set and a few behaviors. “"
-
-    },
-    {
-        authorName: "James C. Anderson",
-        authorThumb: "/images/testimonial/image-2.png",
-        authorDesignation: "Head Of Idea",
-        reviewText: "“ It’s amazing how much easier it has been to meet new people and create instantly non connections. I have the exact same personal the only thing that has changed is my mind set and a few behaviors. “"
-
-    }
-]
-
-export {TestimonialData};
+export { TestimonialData };

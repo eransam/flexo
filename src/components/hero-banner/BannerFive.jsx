@@ -2,6 +2,7 @@ import { FurnitureSlider } from "@/data/Slider";
 import SlickSlider from "../elements/SlickSlider";
 import Link from "next/link";
 import Image from "next/image";
+import { Direction } from "react-range";
 
 const BannerFive = () => {
   return (
@@ -22,7 +23,10 @@ const BannerFive = () => {
                     <span className="subtitle">
                       <i className={data.subIcon} /> {data.subTitle}
                     </span>
-                    <h1 className="title">{data.title}</h1>
+                    <h1 className="title" style={{ direction: "rtl" }}>
+                      {data.title}
+                    </h1>
+
                     <div className="shop-btn">
                       <Link href="/shop" className="axil-btn btn-bg-white">
                         <i className="fal fa-shopping-cart" /> לחנות

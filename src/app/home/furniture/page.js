@@ -24,7 +24,6 @@ import ProductThree from "@/components/product/ProductThree";
 import ProductOne from "@/components/product/ProductOne";
 
 const HomeFurniture = () => {
-  debugger;
   const pathname = usePathname();
   const split = pathname.split("/");
   //   const pageCategory = split[split.length - 1];
@@ -235,7 +234,6 @@ const HomeFurniture = () => {
     },
   ];
 
-  debugger;
   const exploreProduct = mapInSlices(furnitureProduct, 8);
 
   return (
@@ -402,7 +400,7 @@ const HomeFurniture = () => {
         </Section> */}
         <WhyChoose />
         <TestimonialOne />
-        <Section pClass="pb--50">
+        {/* <Section pClass="pb--50">
           <SectionTitle
             title="New Arrivals"
             subtitle="This Week’s"
@@ -440,9 +438,9 @@ const HomeFurniture = () => {
               <ProductTwo product={data} key={data.id} />
             ))}
           </SlickSlider>
-        </Section>
+        </Section> */}
         <NewsLetter bgImage="bg_image--6" />
-        <ServiceTwo />
+        {/* <ServiceTwo /> */}
       </main>
       <FooterTwo />
     </>
