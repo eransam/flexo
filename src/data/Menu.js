@@ -2,32 +2,33 @@ const HeaderMenu = [
   {
     name: "דף הבית",
     url: "#",
-    hasChildren: true,
-    children: [
-      {
-        name: "Electronics",
-        url: "/home/electronics",
-      },
+    hasChildren: false,
+    // hasChildren: true,
+    // children: [
+    //   {
+    //     name: "Electronics",
+    //     url: "/home/electronics",
+    //   },
 
-      {
-        name: "Jewellery",
-        url: "/home/jewellery",
-      },
+    //   {
+    //     name: "Jewellery",
+    //     url: "/home/jewellery",
+    //   },
 
-      {
-        name: "Fashion",
-        url: "/home/fashion",
-      },
+    //   {
+    //     name: "Fashion",
+    //     url: "/home/fashion",
+    //   },
 
-      {
-        name: "Furniture",
-        url: "/home/furniture",
-      },
-      {
-        name: "NFT",
-        url: "/home/nft",
-      },
-    ],
+    //   {
+    //     name: "Furniture",
+    //     url: "/home/furniture",
+    //   },
+    //   {
+    //     name: "NFT",
+    //     url: "/home/nft",
+    //   },
+    // ],
   },
   {
     name: "חנות",
@@ -67,29 +68,30 @@ const HeaderMenu = [
   {
     name: "צור קשר",
     url: "#",
-    hasChildren: true,
-    children: [
-      {
-        name: "Wishlist",
-        url: "/wishlist",
-      },
-      {
-        name: "Cart",
-        url: "/cart",
-      },
-      {
-        name: "Sign Up",
-        url: "/sign-up",
-      },
-      {
-        name: "Privacy Policy",
-        url: "/privacy-policy",
-      },
-      {
-        name: "Coming Soon",
-        url: "/coming-soon",
-      },
-    ],
+    hasChildren: false,
+    // hasChildren: true,
+    // children: [
+    //   {
+    //     name: "Wishlist",
+    //     url: "/wishlist",
+    //   },
+    //   {
+    //     name: "Cart",
+    //     url: "/cart",
+    //   },
+    //   {
+    //     name: "Sign Up",
+    //     url: "/sign-up",
+    //   },
+    //   {
+    //     name: "Privacy Policy",
+    //     url: "/privacy-policy",
+    //   },
+    //   {
+    //     name: "Coming Soon",
+    //     url: "/coming-soon",
+    //   },
+    // ],
   },
   {
     name: "אודות",

@@ -17,7 +17,7 @@ const FooterTwo = () => {
             <div className="row">
               <div className="col-lg-3 col-sm-6">
                 <div className="axil-footer-widget">
-                  <h5 className="widget-title">Support</h5>
+                  <h5 className="widget-title">תמיכה</h5>
                   <div className="inner">
                     <p
                       dangerouslySetInnerHTML={{
@@ -57,7 +57,7 @@ const FooterTwo = () => {
                   </div>
                 </div>
               ))}
-              <div className="col-lg-3 col-sm-6">
+              {/* <div className="col-lg-3 col-sm-6">
                 <div className="axil-footer-widget">
                   <h5 className="widget-title">הורד את האפליקציה</h5>
                   <div className="inner">
@@ -92,7 +92,7 @@ const FooterTwo = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const FooterTwo = () => {
                 <div className="copyright-left d-flex flex-wrap justify-content-center">
                   <ul className="quick-link">
                     <li>
-                      © {new Date().getFullYear()}. All rights reserved by {" "}
+                      © {new Date().getFullYear()}. All rights reserved by{" "}
                       <a target="_blank" href="https://axilthemes.com/">
                         Axilthemes
                       </a>

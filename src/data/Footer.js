@@ -1,26 +1,26 @@
 const FooterData = {
   footerLink: [
     {
-      label: "Account",
+      label: "חשבון",
       linkList: [
         {
-          name: "My Account",
+          name: "החשבון שלי",
           url: "/dashboard",
         },
         {
-          name: "Login",
+          name: "כניסה",
           url: "/sign-in",
         },
         {
-          name: "Cart",
+          name: "סל הקניות",
           url: "/cart",
         },
         {
-          name: "Wishlist",
+          name: "מוצרים מועדפים",
           url: "/wishlist",
         },
         {
-          name: "Shop",
+          name: "לחנות",
           url: "/shop",
         },
       ],
@@ -69,10 +69,9 @@ const FooterData = {
     },
   ],
   footerInfo: {
-    address:
-      "685 Market Street, <br /> Las Vegas, LA 95820, <br /> United States.",
-    email: "example@domain.com",
-    phone: "(+01) 850-315-5862",
+    address: "תל אביב, הרצל",
+    email: "flexo@gmail.com",
+    phone: "052-5555555",
   },
   footerAppInfo: {
     title: "האפליקציה לא זמינה כעת",

@@ -28,13 +28,10 @@ const AboutStore = {
   thumbnail: "/images/about/about-01.png",
   subtitle: "About Store",
   subtitleIcon: "far fa-shopping-basket",
-  title: "Online shopping includes both buying things online.",
+  title: "flexo",
   higlightLine:
-    "Salesforce B2C Commerce can help you create unified, intelligent digital commerce experiences — both online and in the store.",
-  description: [
-    "Empower your sales teams with industry tailored solutions that support manufacturers as they go digital, and adapt to changing markets & customers faster by creating new business.",
-    "Salesforce B2B Commerce offers buyers the seamless, self-service experience of online shopping with all the B2B",
-  ],
+    "אנו מתמחים במכירת שולחנות ארגונומיים איכותיים, המשלבים נוחות ופרקטיות יחד עם עיצוב מודרני ואלגנטי. החזון שלנו הוא לשפר את חוויית העבודה והלימודים שלכם על ידי מתן פתרונות ארגונומיים מתקדמים שיתאימו לכל סביבה - משרדית או ביתית.",
+  description: [""],
 };
 
 const AboutAchievment = [

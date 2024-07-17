@@ -21,11 +21,11 @@ const HeaderActions = (props) => {
   };
   const cartHandler = (data) => {
     dispatch(miniCartHandler(data));
-  }
+  };
 
-const mobileMneuHandler = (data) => {
-  dispatch(mobileMenu(data))
-}
+  const mobileMneuHandler = (data) => {
+    dispatch(mobileMenu(data));
+  };
   return (
     <div className="header-action">
       <ul className="action-list">
@@ -35,7 +35,7 @@ const mobileMneuHandler = (data) => {
               type="search"
               className="placeholder product-search-input"
               name="search2"
-              placeholder="What are you looking for?"
+              placeholder="חיפוש"
               autoComplete="off"
             />
             <button type="submit" className="icon wooc-btn-search">
@@ -56,14 +56,17 @@ const mobileMneuHandler = (data) => {
 
         <li className="wishlist">
           <Link href="/wishlist">
-            {getProducts.wishListQuantity > 0 && 
+            {getProducts.wishListQuantity > 0 && (
               <span className="cart-count">{getProducts.wishListQuantity}</span>
-            }
+            )}
             <i className="far fa-heart" />
           </Link>
         </li>
         <li className="shopping-cart">
-          <button className="cart-dropdown-btn" onClick={() => cartHandler(true)}>
+          <button
+            className="cart-dropdown-btn"
+            onClick={() => cartHandler(true)}
+          >
             <span className="cart-count">{getProducts.cartQuantityTotal}</span>
             <i className="far fa-shopping-cart" />
           </button>
@@ -101,7 +104,10 @@ const mobileMneuHandler = (data) => {
           </div>
         </li>
         <li className="axil-mobile-toggle">
-          <button className="menu-btn mobile-nav-toggler" onClick={() => mobileMneuHandler(true)}>
+          <button
+            className="menu-btn mobile-nav-toggler"
+            onClick={() => mobileMneuHandler(true)}
+          >
             <i className="fal fa-bars"></i>
           </button>
         </li>

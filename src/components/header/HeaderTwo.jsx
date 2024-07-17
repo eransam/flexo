@@ -42,7 +42,7 @@ const HeaderTwo = () => {
                     type="search"
                     className="placeholder product-search-input"
                     name="search2"
-                    placeholder="What are you looking for?"
+                    placeholder="חיפוש"
                     autoComplete="off"
                   />
                   <button type="submit" className="icon wooc-btn-search">

@@ -17,7 +17,7 @@ const AboutUs = () => {
     <>
       <HeaderFive headerSlider />
       <main className="main-wrapper">
-        <Breadcrumb activeItem="עלינו" title="About Our Store" />
+        <Breadcrumb activeItem="עלינו" title="אודותינו" />
         <Section pClass="axil-about-area about-style-1">
           <div className="row align-items-center">
             <div className="col-xl-4 col-lg-6">
@@ -25,7 +25,7 @@ const AboutUs = () => {
                 <div className="thumbnail">
                   <Image
                     src={AboutStore.thumbnail}
-                    alt="About Us"
+                    alt="עלינו"
                     width={420}
                     height={501}
                   />
