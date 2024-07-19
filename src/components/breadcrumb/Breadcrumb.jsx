@@ -11,7 +11,7 @@ const Breadcrumb = (props) => {
               <div className="inner">
                 <ul className="axil-breadcrumb">
                   <li className="axil-breadcrumb-item">
-                    <Link href="/">Home</Link>
+                    <Link href="/">דף הבית</Link>
                   </li>
                   <li className="separator" />
                   <li

@@ -26,7 +26,7 @@ const WhoAreGallery = [
 
 const AboutStore = {
   thumbnail: "/images/about/about-01.png",
-  subtitle: "About Store",
+  subtitle: "על החנות",
   subtitleIcon: "far fa-shopping-basket",
   title: "flexo",
   higlightLine:
@@ -37,33 +37,33 @@ const AboutStore = {
 const AboutAchievment = [
   {
     icon: "/images/about/shape-01.png",
-    title: "40,000+ Happy Customer",
-    text: "Empower your sales teams with industry tailored solutions that support.",
+    title: "1000+ לקוחות מרוצים",
+    text: "העצימו את סביבת העבודה שלכם עם שולחנות ארגונומיים המותאמים במיוחד לצרכים של חברות ולקוחות פרטיים. השולחנות שלנו תומכים ביעילות, נוחות ובריאות, ומשפרים את ביצועי העבודה. בחרו בטכנולוגיה המתקדמת ובאיכות הגבוהה שלנו כדי להבטיח סביבת עבודה אופטימלית ומרשימה.",
   },
   {
     icon: "/images/about/shape-02.png",
-    title: "16 Years of Experiences",
-    text: "Empower your sales teams with industry tailored solutions that support.",
+    title: "שנים של ניסיון בתחום הארגונומיה",
+    text: "שדרגו את סביבת העבודה שלכם עם שולחנות ארגונומיים המותאמים במיוחד לצרכים של חברות ולקוחות פרטיים.",
   },
   {
     icon: "/images/about/shape-03.png",
-    title: "12 Awards Won",
-    text: "Empower your sales teams with industry tailored solutions that support.",
+    title: "שירות לקוחות טלפוני",
+    text: "בנוסף לשולחנות הארגונומיים המתקדמים שלנו, אנו מציעים שירות טלפוני זמין למענה על כל שאלה או צורך. הצוות שלנו כאן כדי לסייע לכם ולוודא שתקבלו את הפתרונות המתאימים ביותר לצרכים שלכם, בכל זמן שתזדקקו.",
   },
 ];
 
 const AboutFeatures = [
   {
-    subtitle: "Features #01",
-    title: "Solutions that work together",
-    text: "Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.",
-    thumbnail: "/images/about/about-02.png",
+    subtitle: "Flexo",
+    title: " ההיסטוריה והייחודיות שלנו",
+    text: " , אנו גאים להוביל את התחום של פתרונות ארגונומיים לעבודה עם שולחנות מתקדמים ומעוצבים. העסק שלנו התחיל מתוך התשוקה להנגיש פתרונות איכותיים לסביבות עבודה, ולספק את התמיכה הנדרשת לשיפור הבריאות והנוחות של העובדים. הייחודיות שלנו טמונה בהבנה עמוקה של הצרכים המשתנים של לקוחותינו, וביכולתנו להציע מוצרים שמבוססים על חדשנות וטכנולוגיה מתקדמת.",
+    thumbnail: "/images/about/4.jpg",
   },
   {
-    subtitle: "Features #02",
-    title: "Solutions that work together",
-    text: "Publish your eCommerce site quickly with our easy-to-use store builder— no coding required. Migrate your items from your point of sale system or turn your Instagram feed into a shopping site and start selling fast. Square Online works for all kinds of businesses—retail, restaurants, services.",
-    thumbnail: "/images/about/about-03.png",
+    subtitle: "ייצור",
+    title: "איכות ותהליך ייצור",
+    text: "אנו מחויבים להציע מוצרים באיכות הגבוהה ביותר, ולשם כך אנו מקפידים על שימוש בחומרים איכותיים ומתקדמים. תהליך הייצור שלנו כולל שלביים קפדניים של בקרת איכות, החל מהפיתוח ועד לשלב ההתקנה הסופית. אנו עובדים עם שותפים מהימנים ועם טכנולוגיות חדשות כדי להבטיח שכל שולחן עונה לסטנדרטים הגבוהים ביותר של עמידות ופרקטיות.",
+    thumbnail: "/images/about/qw.jpg",
   },
 ];
 

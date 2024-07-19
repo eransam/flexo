@@ -67,7 +67,7 @@ const HeaderMenu = [
   },
   {
     name: "צור קשר",
-    url: "#",
+    url: "/contact",
     hasChildren: false,
     // hasChildren: true,
     // children: [

@@ -75,7 +75,7 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-        <section className="axil-team-area axil-section-gap bg-wild-sand">
+        {/* <section className="axil-team-area axil-section-gap bg-wild-sand">
           <div className="team-left-fullwidth">
             <div className="container ml--xxl-0">
               <SectionTitle
@@ -108,7 +108,7 @@ const AboutUs = () => {
               </SlickSlider>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="axil-about-area about-style-2">
           <div className="container">
             {AboutFeatures?.map((data, index) => (
@@ -140,7 +140,7 @@ const AboutUs = () => {
                     <h4 className="title">{data.title}</h4>
                     <p>{data.text}</p>
                     <Link href="/contact" className="axil-btn btn-outline">
-                      Get In Touch
+                      צור קשר
                     </Link>
                   </div>
                 </div>

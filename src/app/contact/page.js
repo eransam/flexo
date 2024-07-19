@@ -39,8 +39,8 @@ const sendEmail = (formData) => {
         <HeaderFive headerSlider />
         <main className="main-wrapper">
             <Breadcrumb 
-            activeItem="Contact"
-            title="Contact With Us"
+            activeItem="צור קשר"
+            title="דברו איתנו"
             />
             <div className="axil-contact-page-area axil-section-gap">
                 <div className="container">
@@ -49,41 +49,41 @@ const sendEmail = (formData) => {
                             <div className="col-lg-8">
                                 <div className="contact-form">
                                     <div>
-                                        <h3 className="title mb--10">We would love to hear from you.</h3>
-                                        <p>If you’ve got great products your making or looking to work with us then drop us a line.</p>
+                                        <h3 className="title mb--10">נשמח לשמוע ממכם</h3>
+                                        <p>נשמח לשמוע מכם! אם יש לכם שאלות על מוצרינו הארגונומיים או אם אתם מעוניינים לשתף פעולה ולהיות חלק מהמסע שלנו, אל תהססו לפנות אלינו. אנו כאן כדי לעזור ולענות על כל שאלה.</p>
                                         <form onSubmit={handleSubmit(sendEmail)}>
                                             <div className="row row--10">
                                                 <div className="col-lg-4">
                                                     <div className="form-group">
-                                                        <label>Name <span>*</span></label>
+                                                        <label>שם מלא <span>*</span></label>
                                                         <input type="text" {...register('name', { required: true })} />
-                                                        {errors.name && <p className="error">Name is required.</p>}
+                                                        {errors.name && <p className="error">שדה זה הוא שדה חובה</p>}
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-4">
                                                     <div className="form-group">
-                                                        <label>Phone <span>*</span></label>
+                                                        <label>טלפון <span>*</span></label>
                                                         <input type="text" {...register('phone', { required: true })} />
-                                                        {errors.phone && <p className="error">Phone is required.</p>}
+                                                        {errors.phone && <p className="error">שדה זה הוא שדה חובה</p>}
                                                     </div>
                                                 </div>
                                                 <div className="col-lg-4">
                                                     <div className="form-group">
                                                         <label>E-mail <span>*</span></label>
                                                         <input type="email" {...register('email', { required: true })} />
-                                                        {errors.email && <p className="error">Email is required.</p>}
+                                                        {errors.email && <p className="error">שדה זה הוא שדה חובה</p>}
                                                     </div>
                                                 </div>
                                                 <div className="col-12">
                                                     <div className="form-group">
-                                                        <label>Your Message</label>
+                                                        <label>הודעה</label>
                                                         <textarea {...register('message')} cols={1} rows={2}  />
                                                     </div>
                                                 </div>
                                                 <div className="col-12">
                                                     <div className="form-group mb--0">
-                                                        <button name="submit" type="submit" className="axil-btn btn-bg-primary">Send Message</button>
-                                                        {result && <p className="success">Message has been sent successfully</p>}
+                                                        <button name="submit" type="submit" className="axil-btn btn-bg-primary">שלח</button>
+                                                        {result && <p className="success">נשלח בהצלחה</p>}
                                                     </div>
                                                 </div>
                                             </div>
@@ -93,28 +93,32 @@ const sendEmail = (formData) => {
                             </div>
                             <div className="col-lg-4">
                                 <div className="contact-location mb--40">
-                                    <h4 className="title mb--20">Our Store</h4>
+                                    <h4 className="title mb--20">המחסן שלנו</h4>
                                     <span className="address mb--20">{StoreInfo.address}</span>
-                                    <span className="phone">Phone: {StoreInfo.phone}</span>
+                                    <span className="phone">טלפון: {StoreInfo.phone}</span>
                                     <span className="email">Email: {StoreInfo.email}</span>
                                 </div>
-                                <div className="contact-career mb--40">
+                                {/* <div className="contact-career mb--40">
                                     <h4 className="title mb--20">Careers</h4>
                                     <p>Instead of buying six things, one that you really like.</p>
-                                </div>
+                                </div> */}
                                 <div className="opening-hour">
-                                    <h4 className="title mb--20">Opening Hours:</h4>
-                                    <p>Monday to Saturday: {StoreInfo.opening.monToSat}
-                                        <br /> Sundays: {StoreInfo.opening.othersDay}
+                                    <h4 className="title mb--20">שעות פתיחה:</h4>
+                                    <p>ראשון - חמישי: {StoreInfo.opening.monToSat}
+                                        <br /> שישי: {StoreInfo.opening.othersDay}
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+
+
                     <div className="axil-google-map-wrap axil-section-gap pb--0">
                         <div className="mapouter">
                             <div className="gmap_canvas">
-                                <iframe width={1080} height={500} id="gmap_canvas" src="https://maps.google.com/maps?q=melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed" />
+                                <iframe width={1080} height={500} id="gmap_canvas" src="https://maps.google.com/maps?q=תל%20אביב,%20הרצל&t=&z=13&ie=UTF8&iwloc=&output=embed" />
                             </div>
                         </div>
                     </div>

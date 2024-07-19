@@ -4,8 +4,8 @@ import { ServiceData } from "@/data/Service";
 
 const ServiceTwo = () => {
   return (
-    <div className="service-area">
-      <div className="container">
+<div className="service-area" style={{ direction: 'rtl', textAlign: 'right' }}>
+<div className="container">
         <div className="row row-cols-xl-4 row-cols-sm-2 row-cols-1 row--20">
 		{ServiceData.slice(0, 4).map((data, index) => (
           <div className="col" key={index}>
@@ -18,7 +18,7 @@ const ServiceTwo = () => {
                 alt="Thumbnail"
                 />
               </div>
-              <div className="content">
+              <div className="content" style={{ direction: 'rtl', textAlign: 'right' }}>
                 <h6 className="title">{data.title}</h6>
                 <p>{data.text}</p>
               </div>

@@ -19,7 +19,7 @@ const NotFound = () => {
                                     <h1 className="title">Page not found</h1>
                                     <p>It seems like we dont find what you searched. The page you were looking for doesn&apos;t exist, isn&apos;t available loading incorrectly.</p>
                                     <Link href="/" className="axil-btn btn-bg-secondary right-icon">
-                                    Back To Home <i className="fal fa-long-arrow-right" />
+                                    חזרה לדף הבית <i className="fal fa-long-arrow-right" />
                                     </Link>
                                 </div>
                             </div>

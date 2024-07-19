@@ -29,7 +29,7 @@ const Logo = {
 
 const StoreInfo = {
   address:
-    "8212 E. Glen Creek Street Orchard Park, NY 14127, United States of America",
+    "תל אביבת הרצל",
   phone: "+123 456 7890",
   email: "Hello@etrade.com",
   opening: {

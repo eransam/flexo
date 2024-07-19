@@ -16,9 +16,9 @@ const UserAddress = () => {
                             <Link href="/dashboard/addresses-edit/shipping" className="address-edit"><i className="far fa-edit" /></Link>
                         </div>
                         <ul className="address-details">
-                            <li>Name: {userAddress.shippingAddress.name}</li>
+                            <li>שם: {userAddress.shippingAddress.name}</li>
                             <li>Email: {userAddress.shippingAddress.email}</li>
-                            <li>Phone: {userAddress.shippingAddress.phone}</li>
+                            <li>טלפון: {userAddress.shippingAddress.phone}</li>
                             <li className="mt--30">{userAddress.shippingAddress.street} <br />{`${userAddress.shippingAddress.state}, ${userAddress.shippingAddress.city} ${userAddress.shippingAddress.postCode}` }</li>
                         </ul>
                     </div>

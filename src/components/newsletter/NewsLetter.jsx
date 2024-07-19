@@ -9,7 +9,7 @@ const NewsLetter = (props) => {
       <div className="container">
         <div
           className={`etrade-newsletter-wrapper bg_image ${
-            props.bgImage ? props.bgImage : "bg_image--5"
+            props.bgImage ? props.bgImage : "bg_image--6"
           }`}
         >
           <div className="newsletter-content">
