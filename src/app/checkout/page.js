@@ -226,18 +226,18 @@ const Checkout = () => {
                                             {cartProducts.cartItems.map((items, index) => (
                                                 <tr className="order-product" key={index}>
                                                     <td>{items.title} <span className="quantity">x{items.cartQuantity}</span></td>
-                                                    <td>${items.salePrice ? items.salePrice : items.price}</td>
+                                                    <td>₪{items.salePrice ? items.salePrice : items.price}</td>
                                                 </tr>
                                             ))}
                                             <tr className="order-subtotal">
                                                 <td>Subtotal</td>
-                                                <td>${cartProducts.cartTotalAmount}</td>
+                                                <td>₪{cartProducts.cartTotalAmount}</td>
                                             </tr>
                                             <tr className="order-shipping">
                                                 <td colSpan={2}>
                                                     <div className="shipping-amount">
                                                         <span className="title">Shipping Method</span>
-                                                        <span className="amount">$35.00</span>
+                                                        <span className="amount">₪35.00</span>
                                                     </div>
                                                     <div className="input-group">
                                                         <input type="radio" id="radio1" name="shipping" defaultChecked />

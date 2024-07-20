@@ -189,7 +189,7 @@ const incrementQuantity = () => {
                           <div className="product-variations-wrapper">
 							{getQuickViewItem.colorAttribute && 
                             <div className="product-variation">
-                              <h6 className="title">Colors:</h6>
+                              <h6 className="title">Colors:3</h6>
                               <div className="color-variant-wrapper">
                                 <ul className="color-variant">
                                   {getQuickViewItem.colorAttribute?.map(

@@ -45,15 +45,15 @@ const HeaderMenu = [
       },
       {
         name: "שולחן דגם סקיי",
-        url: "/products/43",
+        url: "/products/1111",
       },
       {
         name: "שולחן דגם סנופי",
-        url: "/products/65",
+        url: "/products/2222",
       },
       {
         name: "שולחן דגם קייגו",
-        url: "/products/2",
+        url: "/products/3333",
       },
       //   {
       //     name: "Product Variation 4",

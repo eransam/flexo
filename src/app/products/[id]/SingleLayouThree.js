@@ -173,7 +173,7 @@ const SingleLayouThree = ({ singleData }) => {
                             <div className="single-product-content">
                                 <div className="inner">
                                     <h2 className="product-title">{singleData.title}</h2>
-                                    <span className="price-amount">${singleData.salePrice ? singleData.salePrice : singleData.price}</span>
+                                    <span className="price-amount">₪{singleData.salePrice ? singleData.salePrice : singleData.price}</span>
                                     <ProductRating rating={singleData} textEnable/>
                                     {singleData.shortDes && 
                                     <>
@@ -184,7 +184,7 @@ const SingleLayouThree = ({ singleData }) => {
                                     <div className="product-variations-wrapper">
                                         {singleData.colorAttribute &&
                                         <div className="product-variation">
-                                            <h6 className="title">Colors:</h6>
+                                            <h6 className="title">צבע</h6>
                                             <div className="color-variant-wrapper">
                                                 <ul className="color-variant">
                                                     {singleData.colorAttribute?.map((data, index) => (
@@ -201,7 +201,7 @@ const SingleLayouThree = ({ singleData }) => {
                                         }
                                         {singleData.sizeAttribute &&
                                         <div className="product-variation product-size-variation">
-                                            <h6 className="title">Size:</h6>
+                                            <h6 className="title">מידה:</h6>
                                             <ul className="range-variant">
                                                 {singleData.sizeAttribute?.map((data, index) => (
                                                     <li key={index} className={productSize === data ? "active" : ""}
@@ -220,7 +220,7 @@ const SingleLayouThree = ({ singleData }) => {
                                         </div>
                                         <ul className="product-action d-flex-center mb--0">
                                             <li className="add-to-cart">
-                                                <button disabled={(singleData.colorAttribute && !colorImage) || (singleData.sizeAttribute && !productSize) ? true : false} onClick={() => handleAddToCart(singleData)} className="axil-btn btn-bg-primary">Add to Cart</button>
+                                                <button disabled={(singleData.colorAttribute && !colorImage) || (singleData.sizeAttribute && !productSize) ? true : false} onClick={() => handleAddToCart(singleData)} className="axil-btn btn-bg-primary">הוספה לסל</button>
                                             </li>
                                             <li className="wishlist">
                                                 <button className="axil-btn wishlist-btn" onClick={() => handleAddToWishlist(singleData)}><i className={isWishlistAdded.length === 1 ? "fas fa-heart" : "far fa-heart"} /></button>
@@ -237,13 +237,13 @@ const SingleLayouThree = ({ singleData }) => {
                 <div className="container">
                     <ul className="nav tabs" role="tablist">
                         <li className="nav-item" role="presentation">
-                            <a className="active" id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Description</a>
+                            <a className="active" id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">תיאור</a>
                         </li>
                         <li className="nav-item " role="presentation">
-                            <a id="additional-info-tab" data-bs-toggle="tab" href="#additional-info" role="tab" aria-controls="additional-info" aria-selected="false">Additional Information</a>
+                            <a id="additional-info-tab" data-bs-toggle="tab" href="#additional-info" role="tab" aria-controls="additional-info" aria-selected="false">מידע נוסף</a>
                         </li>
                         <li className="nav-item" role="presentation">
-                            <a id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                            <a id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">חוות דעת</a>
                         </li>
                     </ul>
                     <div className="tab-content">
