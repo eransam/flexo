@@ -20,7 +20,7 @@ const FooterData = {
           url: "/wishlist",
         },
         {
-          name: "לחנות",
+          name: "שולחנות מתכווננים",
           url: "/shop",
         },
       ],

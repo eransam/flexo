@@ -31,38 +31,38 @@ const HeaderMenu = [
     // ],
   },
   {
-    name: "חנות",
+    name: "שולחנות מתכווננים",
     url: "#",
     hasChildren: true,
     children: [
+      //   {
+      //     name: "Shop",
+      //     url: "/shop",
+      //   },
       {
-        name: "Shop",
-        url: "/shop",
-      },
-      {
-        name: "Shop Without Sidebar",
+        name: "לחנות",
         url: "/shop?layout=no-sidebar",
       },
       {
-        name: "Product Variation 1",
+        name: "שולחן דגם סקיי",
         url: "/products/43",
       },
       {
-        name: "Product Variation 2",
+        name: "שולחן דגם סנופי",
         url: "/products/65",
       },
       {
-        name: "Product Variation 3",
+        name: "שולחן דגם קייגו",
         url: "/products/2",
       },
-      {
-        name: "Product Variation 4",
-        url: "/products/77",
-      },
-      {
-        name: "Product Variation 5",
-        url: "/products/19",
-      },
+      //   {
+      //     name: "Product Variation 4",
+      //     url: "/products/77",
+      //   },
+      //   {
+      //     name: "Product Variation 5",
+      //     url: "/products/19",
+      //   },
     ],
   },
   {
@@ -103,34 +103,34 @@ const HeaderMenu = [
     url: "#",
     hasChildren: true,
     children: [
+      //   {
+      //     name: "Blog Grid",
+      //     url: "/blog",
+      //   },
+      //   {
+      //     name: "Blog List",
+      //     url: "/blog?blog=list",
+      //   },
       {
-        name: "Blog Grid",
-        url: "/blog",
-      },
-      {
-        name: "Blog List",
-        url: "/blog?blog=list",
-      },
-      {
-        name: "Standard Post",
+        name: "ריהוט ארגונומי",
         url: "/blog/important-updates-for-listing-and-delisting-your-nfts",
       },
-      {
-        name: "Gallery Post",
-        url: "/blog/apple-presents-app-best-of-2020-winners",
-      },
-      {
-        name: "Video Post",
-        url: "/blog/keeping-yourself-safe-when-buying-nfts-on-etrade",
-      },
-      {
-        name: "Audio Post",
-        url: "/blog/how-to-generate-blog-ideas-are-great-for-businesses-that-sell-both-b2b-and-d2c",
-      },
-      {
-        name: "Quote Post",
-        url: "/blog/an-oral-history-of-the-aim-away-message-by-the-people-who-were-there",
-      },
+      //   {
+      //     name: "Gallery Post",
+      //     url: "/blog/apple-presents-app-best-of-2020-winners",
+      //   },
+      //   {
+      //     name: "Video Post",
+      //     url: "/blog/keeping-yourself-safe-when-buying-nfts-on-etrade",
+      //   },
+      //   {
+      //     name: "Audio Post",
+      //     url: "/blog/how-to-generate-blog-ideas-are-great-for-businesses-that-sell-both-b2b-and-d2c",
+      //   },
+      //   {
+      //     name: "Quote Post",
+      //     url: "/blog/an-oral-history-of-the-aim-away-message-by-the-people-who-were-there",
+      //   },
     ],
   },
   // {

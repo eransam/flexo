@@ -29,7 +29,7 @@ const BannerFive = () => {
 
                     <div className="shop-btn">
                       <Link href="/shop" className="axil-btn btn-bg-white">
-                        <i className="fal fa-shopping-cart" /> לחנות
+                        <i className="fal fa-shopping-cart" /> שולחנות מתכווננים
                       </Link>
                     </div>
                   </div>
