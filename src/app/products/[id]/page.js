@@ -89,7 +89,7 @@ const ProductDetails = ({ params }) => {
 
 export default ProductDetails;
 
-export async function generateStaticParams() {
+export async function generateStaticParams() { // fetch data before user even got to this component
   const products = ProductsData;
 
   return products.map((post) => ({

@@ -31,7 +31,7 @@ const HeaderMenu = [
     // ],
   },
   {
-    name: "שולחנות מתכווננים",
+    name: "מוצרים",
     url: "#",
     hasChildren: true,
     children: [
@@ -133,6 +133,47 @@ const HeaderMenu = [
       //   },
     ],
   },
+
+  {
+    name: "קטגוריות",
+    url: "#",
+    hasChildren: true,
+    children: [
+      //   {
+      //     name: "Shop",
+      //     url: "/shop",
+      //   },
+      //   {
+      //     name: "שולחנות מתכווננים",
+      //     url: "/shop?layout=no-sidebar",
+      //   },
+      {
+        name: "שולחנות מתכווננים",
+        url: "/Ergonomic-desks",
+      },
+      {
+        name: "שולחנות חשמליים",
+        url: "/products/1111",
+      },
+      {
+        name: "שולחן דגם סנופי",
+        url: "/products/2222",
+      },
+      {
+        name: "שולחן דגם קייגו",
+        url: "/products/3333",
+      },
+      //   {
+      //     name: "Product Variation 4",
+      //     url: "/products/77",
+      //   },
+      //   {
+      //     name: "Product Variation 5",
+      //     url: "/products/19",
+      //   },
+    ],
+  },
+
   // {
   //     name: "Contact",
   //     url: "/contact",

@@ -1,9 +1,15 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
-  webpack: (config) => {
+  webpack: (config, { dev, isServer }) => {
     config.resolve.fallback = { fs: false };
-    return config;
-  }
-}
 
-module.exports = nextConfig
+    // Enable source maps in development mode
+    if (dev && !isServer) {
+      config.devtool = "source-map";
+    }
+
+    return config;
+  },
+};
+
+module.exports = nextConfig;

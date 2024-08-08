@@ -19,9 +19,13 @@ const FooterData = {
           name: "מוצרים מועדפים",
           url: "/wishlist",
         },
+        // {
+        //   name: "שולחנות מתכווננים",
+        //   url: "/shop",
+        // },
         {
           name: "שולחנות מתכווננים",
-          url: "/shop",
+          url: "/Ergonomic-desks",
         },
       ],
     },
