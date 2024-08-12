@@ -16,9 +16,28 @@ import {
   AboutStore,
 } from "@/data/About";
 import { TeamData } from "@/data/Team";
+import { getAllPosts, getPostBySlug } from "@/utils/api";
+
 import SinglePostThumbnail from "../../../src/components/blog/single-post/SinglePostThumbnail";
 
-const ErgonomicDesks = () => {
+const ErgonomicDesks = async () => {
+  const postMeta = getPostBySlug("apple-presents-app-best-of-2020-winners", [
+    "id",
+    "title",
+    "postFormat",
+    "videoUrl",
+    "audioFile",
+    "cate",
+    "featureImg",
+    "largeImg",
+    "gallery",
+    "author_name",
+    "author_img",
+    "date",
+    "views",
+    "content",
+  ]);
+
   return (
     <>
       {/* הדר */}
@@ -27,7 +46,7 @@ const ErgonomicDesks = () => {
         {/* סקשיין פתיחה עם כותרת */}
         <Breadcrumb activeItem="שולחונת מתכווננים" title="שולחונת מתכווננים" />
         <div className="axil-blog-area axil-section-gap">
-          <SinglePostThumbnail metaData={"gallery"} />
+          <SinglePostThumbnail metaData={postMeta} />
         </div>
         <section className="axil-about-area about-style-2">
           <div className="container">

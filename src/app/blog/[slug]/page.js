@@ -12,6 +12,9 @@ import SingleBlogContent from "@/components/blog/single-post/SingleBlogContent";
 
 const BlogDetails = async ({ params }) => {
   debugger;
+
+  console.log("params.slug: ", params.slug);
+
   const postMeta = getPostBySlug(params.slug, [
     "id",
     "title",

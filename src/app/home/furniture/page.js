@@ -25,6 +25,7 @@ import ProductOne from "@/components/product/ProductOne";
 
 const HomeFurniture = () => {
   const pathname = usePathname();
+
   const split = pathname.split("/");
   //   const pageCategory = split[split.length - 1];
   const pageCategory = "Furniture";
