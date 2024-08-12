@@ -9,7 +9,7 @@ import { slugify } from "@/utils";
 const SinglePostThumbnail = ({ metaData }) => {
   // FormatClass = "post-gallery"
   const FormatClass = () => {
-    console.log("metaData.postFormat: ", metaData);
+    uconsole.log("metaData.postFormat: ", metaData);
 
     console.log("metaData.postFormat: ", metaData.postFormat);
     console.log("metaData.gallery: ", metaData.gallery);

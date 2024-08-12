@@ -9,16 +9,11 @@ import FooterTwo from "@/components/footer/FooterTwo";
 import HeaderFive from "@/components/header/HeaderFive";
 import NewsLetter from "@/components/newsletter/NewsLetter";
 import ServiceTwo from "@/components/services/ServiceTwo";
-import {
-  AboutAchievment,
-  AboutFeatures,
-  AboutFeatures_Ergonomic_desks,
-  AboutStore,
-} from "@/data/About";
+import { AboutAchievment, AboutStore } from "@/data/About";
 import { TeamData } from "@/data/Team";
+import { TopProducts } from "@/data/Products";
 import { getAllPosts, getPostBySlug } from "@/utils/api";
-
-import SinglePostThumbnail from "../../../src/components/blog/single-post/SinglePostThumbnail";
+import ProductSeven from "@/components/product/ProductSeven";
 
 const ErgonomicDesks = async () => {
   const postMeta = getPostBySlug("apple-presents-app-best-of-2020-winners", [
@@ -37,150 +32,365 @@ const ErgonomicDesks = async () => {
     "views",
     "content",
   ]);
-
+  const best_products = [
+    {
+      id: 77,
+      title: "Flexo scoter1",
+      thumbnail:
+        "/images/product/furniture/flexo_teble/color rubber black legs.JPG",
+      gallery: [
+        "/images/product/furniture/product-1.png",
+        "/images/product/furniture/product-2.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Round Table"],
+      price: 80,
+      salePrice: 60,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 78,
+      title: "flexo acer",
+      thumbnail:
+        "/images/product/furniture/flexo_teble/color rubber white legs.JPG",
+      gallery: [
+        "/images/product/furniture/product-2.png",
+        "/images/product/furniture/product-6.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Vintage Table"],
+      price: 90,
+      salePrice: 70,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 79,
+      title: "flexo xr",
+      thumbnail: "/images/product/furniture/flexo_teble/E6 with black top.JPG",
+      gallery: [
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-7.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Round Table"],
+      price: 85,
+      salePrice: 75,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+    {
+      id: 80,
+      title: "flexo woodi",
+      thumbnail: "/images/product/furniture/flexo_teble/E6 wood top.JPG",
+      gallery: [
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-8.png",
+        "/images/product/furniture/product-3.png",
+        "/images/product/furniture/product-4.png",
+        "/images/product/furniture/product-5.png",
+      ],
+      pCate: "Furniture",
+      cate: ["Arm Chair"],
+      price: 105,
+      salePrice: 100,
+      productType: "simple",
+      shortDes: {
+        text: "In ornare lorem ut est dapibus, ut tincidunt nisi pretium. Integer ante est, elementum eget magna. Pellentesque sagittis dictum libero, eu dignissim tellus.",
+        listItem:
+          '<li><i class="fal fa-check"></i>In stock</li><li><i class="fal fa-check"></i>Free delivery available</li><li><i class="fal fa-check"></i>Sales 30% Off Use Code: MOTIVE30</li>',
+      },
+      description: {
+        textDesc: [
+          {
+            title: "Specifications:",
+            text: "We’ve created a full-stack structure for our working workflow processes, were from the funny the century initial all the made, have spare to negatives. But the structure was from the funny the century rather, initial all the made, have spare to negatives.",
+          },
+          {
+            title: "Care & Maintenance:",
+            text: "Use warm water to describe us as a product team that creates amazing UI/UX experiences, by crafting top-notch user experience.",
+          },
+        ],
+        listDesc: [
+          {
+            icon: "/images/product/product-thumb/icon-3.png",
+            title: "Easy Returns",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-2.png",
+            title: "Quality Service",
+          },
+          {
+            icon: "/images/product/product-thumb/icon-1.png",
+            title: "Original Product",
+          },
+        ],
+      },
+    },
+  ];
   return (
     <>
-      {/* הדר */}
       <HeaderFive headerSlider />
       <main className="main-wrapper">
-        {/* סקשיין פתיחה עם כותרת */}
-        <Breadcrumb activeItem="שולחונת מתכווננים" title="שולחונת מתכווננים" />
-        <div className="axil-blog-area axil-section-gap">
-          <SinglePostThumbnail metaData={postMeta} />
-        </div>
-        <section className="axil-about-area about-style-2">
+        {/* Breadcrumb */}
+        <Breadcrumb activeItem="Ergonomic Desks" title="Ergonomic Desks" />
+
+        {/* Storyboard Section */}
+        <section className="storyboard-section">
           <div className="container">
-            {AboutFeatures_Ergonomic_desks?.map((data, index) => (
-              <div
-                className="row align-items-center mb--80 mb_sm--60"
-                key={index}
-              >
-                <div
-                  className={`col-lg-5 ${index % 2 === 0 ? "" : "order-lg-2"}`}
-                >
-                  <div className="about-thumbnail">
-                    <Image
-                      src={data.thumbnail}
-                      width={545}
-                      height={440}
-                      alt="About Us"
-                    />
-                  </div>
-                </div>
-                <div
-                  className={`col-lg-7 ${index % 2 === 0 ? "" : "order-lg-1"}`}
-                >
-                  <div
-                    className={`about-content ${
-                      index % 2 === 0 ? "content-right" : "content-left"
-                    }`}
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <Image
+                  src="/images/product/furniture/product-1.png" // Replace with your image path
+                  alt="Your Product"
+                  width={600}
+                  height={400}
+                  className="storyboard-image"
+                />
+              </div>
+              <div className="col-lg-6">
+                <div className="storyboard-content">
+                  <h3 className="storyboard-title">
+                    Innovative Ergonomic Desk
+                  </h3>
+                  <p className="storyboard-text">
+                    Our ergonomic desks are designed to enhance your
+                    productivity and comfort. With adjustable height settings,
+                    premium materials, and a sleek design, this desk is the
+                    perfect addition to any workspace. Upgrade your work
+                    environment and experience the benefits of ergonomic design.
+                  </p>
+                  <Link
+                    href="/products/ergonomic-desk"
+                    className="axil-btn btn-primary"
                   >
-                    <span className="subtitle">{data.subtitle}</span>
-                    <h4 className="title">{data.title}</h4>
-                    <p>{data.text}</p>
-                    <Link href="/contact" className="axil-btn btn-outline">
-                      צור קשר
-                    </Link>
-                  </div>
+                    Learn More
+                  </Link>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </section>
 
-        <Section pClass="axil-about-area about-style-1">
-          <div className="row align-items-center">
-            <div className="col-xl-4 col-lg-6">
-              <div className="about-thumbnail">
-                <div className="thumbnail">
-                  <Image
-                    src={AboutStore.thumbnail}
-                    alt="עלינו"
-                    width={420}
-                    height={501}
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-8 col-lg-6">
-              <div className="about-content content-right">
-                <span className="title-highlighter highlighter-primary2">
-                  <i className={AboutStore.subtitleIcon} />
-                  {AboutStore.subtitle}
-                </span>
-                <h3 className="title">{AboutStore.title}</h3>
-                <span className="text-heading">{AboutStore.higlightLine}</span>
-                <div className="row">
-                  {AboutStore.description?.map((data, index) => (
-                    <div className="col-xl-6" key={index}>
-                      <p>{data}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </Section>
-
-        <section className="about-info-area">
+        {/* Photo Gallery Section */}
+        <Section pClass="photo-gallery-section">
           <div className="container">
-            <div className="row row--20">
-              {AboutAchievment?.map((data, index) => (
-                <div className="col-lg-4" key={index}>
-                  <div className="about-info-box">
-                    <div className="thumb">
-                      <Image
-                        src={data.icon}
-                        width={60}
-                        height={60}
-                        alt="Shape"
-                      />
-                    </div>
-                    <div className="content">
-                      <h6 className="title">{data.title}</h6>
-                      <p>{data.text}</p>
-                    </div>
-                  </div>
+            <SectionTitle
+              title="Photo Gallery"
+              subtitle="Showcasing Our Products"
+              subColor="highlighter-primary"
+            />
+            <div className="row">
+              {postMeta.gallery?.map((image, index) => (
+                <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={index}>
+                  <Image
+                    src={image}
+                    width={300}
+                    height={200}
+                    alt={`Gallery Image ${index + 1}`}
+                  />
                 </div>
               ))}
             </div>
           </div>
-        </section>
+        </Section>
 
-        <section className="axil-team-area axil-section-gap bg-wild-sand">
-          <div className="team-left-fullwidth">
-            <div className="container ml--xxl-0">
-              <SectionTitle
-                title="Expart Management Team"
-                subtitle="Our Team"
-                subtitleIcon="fas fa-users"
-                subColor="highlighter-primary"
-              />
-              <SlickSlider
-                class="team-slide-activation slick-layout-wrapper--20 axil-slick-arrow arrow-top-slide"
-                slidesToShow={4}
-                infinite={false}
-              >
-                {TeamData?.map((data, index) => (
-                  <div className="axil-team-member" key={index}>
-                    <div className="thumbnail">
-                      <Image
-                        src={data.thumbnail}
-                        width={330}
-                        height={380}
-                        alt={data.name}
-                      />
-                    </div>
-                    <div className="team-content">
-                      <span className="subtitle">{data.designation}</span>
-                      <h5 className="title">{data.name}</h5>
-                    </div>
-                  </div>
-                ))}
-              </SlickSlider>
-            </div>
+        {/* Caption */}
+        <Section pClass="caption-section">
+          <div className="container text-center">
+            <h3 className="caption-title">Elevate Your Workspace</h3>
+            <p className="caption-text">
+              Discover the comfort and efficiency of our ergonomic desks,
+              designed to enhance your work experience.
+            </p>
           </div>
-        </section>
+        </Section>
+
+        {/* Video Section */}
+        <Section pClass="video-section">
+          <div className="container text-center">
+            <h3 className="video-title">Watch Our Product in Action</h3>
+            <video controls className="w-100">
+              <source src={postMeta.videoUrl} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </Section>
+
+        {/* Caption */}
+        <Section pClass="caption-section">
+          <div className="container text-center">
+            <h3 className="caption-title">Crafted for Excellence</h3>
+            <p className="caption-text">
+              Our products are designed with the user in mind, ensuring both
+              comfort and productivity.
+            </p>
+          </div>
+        </Section>
+
+        {/* Top Products Section */}
+
+        <Section pClass="pb--0" borderBottom="pb--50">
+          <SectionTitle
+            title="מוצרים נבחרים"
+            subtitle="החודש"
+            subtitleIcon="far fa-shopping-basket"
+            subColor="highlighter-secondary"
+          />
+          <div className="row">
+            {best_products.map((data) => (
+              <div className="col-xl-3 col-lg-4 col-sm-6" key={data.id}>
+                <ProductSeven product={data} />
+              </div>
+            ))}
+          </div>
+        </Section>
+
+        {/* Text Section */}
+        <Section pClass="text-section">
+          <div className="container text-center">
+            <h3 className="text-title">Why Choose Our Products?</h3>
+            <p className="text-content">
+              Our ergonomic desks are not just furniture; they are a solution
+              for a healthier and more efficient workspace. With a focus on
+              quality, innovation, and customer satisfaction, we strive to
+              provide products that meet the highest standards.
+            </p>
+          </div>
+        </Section>
+
+        {/* Photo Gallery Slider Section */}
+        {/* <section className="photo-gallery-slider-section">
+          <div className="container">
+            <SectionTitle
+              title="Our Product Gallery"
+              subtitle="Scroll Through Our Collection"
+              subtitleIcon="fas fa-camera"
+              subColor="highlighter-primary"
+            />
+            <SlickSlider
+              class="photo-gallery-slider"
+              slidesToShow={1}
+              arrows={true}
+              infinite={true}
+            >
+              {[
+                "images/product/furniture/flexo_teble/IMG_1831.JPG",
+                "/images/product/furniture/product-1.png", // Replace with your image paths
+                "images/product/furniture/flexo_teble/IMG_1831.JPG",
+              ].map((image, index) => (
+                <div key={index} className="gallery-image">
+                  <Image
+                    src={image}
+                    alt={`Gallery Image ${index + 1}`}
+                    width={800}
+                    height={500}
+                  />
+                </div>
+              ))}
+            </SlickSlider>
+          </div>
+        </section> */}
 
         <NewsLetter />
         <ServiceTwo />
