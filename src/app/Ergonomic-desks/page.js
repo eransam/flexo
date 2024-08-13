@@ -18,6 +18,7 @@ import WhyChoose from "@/components/why-choose/WhyChoose";
 import TestimonialOne from "@/components/testimonial/TestimonialOne";
 import ContactForm from "@/components/contact/ContactForm";
 import FAQSection from "@/components/FAQSection/FAQSection";
+import PhotoGallerySection from "@/components/PhotoGallerySection";
 
 const ErgonomicDesks = async () => {
   //   const postMeta = getPostBySlug("apple-presents-app-best-of-2020-winners", [
@@ -264,6 +265,9 @@ const ErgonomicDesks = async () => {
             ))}
           </div>
         </Section>
+
+        <PhotoGallerySection />
+
         {/* סקשיין תמונה וטקסט */}
         <section className="storyboard-section">
           <div className="container">

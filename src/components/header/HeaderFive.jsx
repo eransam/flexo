@@ -56,7 +56,9 @@ const HeaderFive = (props) => {
             <div className={`header-main-nav ${menuOption.isMobileMenuOpen ? "open": ""}`}>
               <Nav />
             </div>
-            <HeaderActions searchBox searchIcon/>
+            {/* <HeaderActions searchBox searchIcon/> */}
+            <HeaderActions />
+
           </div>
         </div>
       </div>

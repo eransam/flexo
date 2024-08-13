@@ -151,18 +151,18 @@ const HeaderMenu = [
         name: "שולחנות מתכווננים",
         url: "/Ergonomic-desks",
       },
-      {
-        name: "שולחנות חשמליים",
-        url: "/products/1111",
-      },
-      {
-        name: "שולחן דגם סנופי",
-        url: "/products/2222",
-      },
-      {
-        name: "שולחן דגם קייגו",
-        url: "/products/3333",
-      },
+      //   {
+      //     name: "שולחנות חשמליים",
+      //     url: "/products/1111",
+      //   },
+      //   {
+      //     name: "שולחן דגם סנופי",
+      //     url: "/products/2222",
+      //   },
+      //   {
+      //     name: "שולחן דגם קייגו",
+      //     url: "/products/3333",
+      //   },
       //   {
       //     name: "Product Variation 4",
       //     url: "/products/77",
