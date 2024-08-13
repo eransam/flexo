@@ -40,7 +40,7 @@ const HeaderOne = () => {
         </p>
       </HeaderTopNotify>
 
-      <div className="axil-header-top">
+      {/* <div className="axil-header-top">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-6">
@@ -54,7 +54,7 @@ const HeaderOne = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="axil-sticky-placeholder" ref={axilPlaceholder}/>
       <div className="axil-mainmenu" ref={axilMainmenu}>
         <div className="container">

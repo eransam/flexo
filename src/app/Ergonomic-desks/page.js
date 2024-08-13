@@ -266,6 +266,18 @@ const ErgonomicDesks = async () => {
           </div>
         </Section>
 
+        {/* טקסט סקשיין */}
+        <Section pClass="caption-section">
+          <div className="container text-center">
+            <h3 className="caption-title">Elevate Your Workspace</h3>
+            <p className="caption-text">
+              Discover the comfort and efficiency of our ergonomic desks,
+              designed to enhance your work experience.
+            </p>
+          </div>
+        </Section>
+
+        {/* סקשיין תמונה גדולה */}
         <PhotoGallerySection />
 
         {/* סקשיין תמונה וטקסט */}

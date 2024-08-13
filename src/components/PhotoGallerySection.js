@@ -48,9 +48,10 @@ const PhotoGallerySection = () => {
       </div>
       <style jsx>{`
         .photo-gallery-section {
-          position: relative;
-          width: 100%;
-          height: 100vh; /* Adjust height as needed */
+          margin: auto;
+          /* position: relative; */
+          width: 90%;
+          height: 100vh;
           overflow: hidden;
         }
 

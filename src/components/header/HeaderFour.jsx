@@ -42,7 +42,7 @@ const HeaderFour = () => {
           Open Doors To A World Of Fashion <Link href="/">Discover More</Link>
         </p>
       </HeaderTopNotify>
-      <div className="axil-header-top">
+      {/* <div className="axil-header-top">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-4 col-12">
@@ -59,7 +59,7 @@ const HeaderFour = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div id="axil-sticky-placeholder" ref={axilPlaceholder}/>
       <div className="axil-mainmenu" ref={axilMainmenu}>
         <div className="container">

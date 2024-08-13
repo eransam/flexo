@@ -14,10 +14,10 @@ import ProductSearchModal from "./elements/ProductSearchModal";
 
 const HeaderTwo = () => {
   const menuOption = useSelector((state) => state.menu);
-	const [searchToggle, setSearchToggle] = useState(false);
-	const searchBoxToggleHandler = () => {
-		setSearchToggle((toggler) => !toggler);
-	};
+  const [searchToggle, setSearchToggle] = useState(false);
+  const searchBoxToggleHandler = () => {
+    setSearchToggle((toggler) => !toggler);
+  };
 
   return (
     <header className="header axil-header header-style-2">
@@ -29,7 +29,7 @@ const HeaderTwo = () => {
           Open Doors To A World Of Fashion <Link href="/">Get Your Offer</Link>
         </p>
       </HeaderTopNotify>
-      <div className="axil-header-top">
+      {/* <div className="axil-header-top">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-2 col-sm-3 col-5">
@@ -55,20 +55,24 @@ const HeaderTwo = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className="axil-mainmenu aside-category-menu">
         <div className="container">
           <div className="header-navbar">
             <HeaderAsideMenu />
-            <div className={`header-main-nav ${menuOption.isMobileMenuOpen ? "open": ""}`}>
+            <div
+              className={`header-main-nav ${
+                menuOption.isMobileMenuOpen ? "open" : ""
+              }`}
+            >
               <Nav />
             </div>
             <HeaderActions />
           </div>
         </div>
       </div>
-	  { searchToggle && (
+      {searchToggle && (
         <ProductSearchModal
           toggleHandler={searchBoxToggleHandler}
           toggler={searchToggle}

@@ -56,24 +56,26 @@ const HeaderActions = (props) => {
 
         <li className="wishlist">
           <Link href="/wishlist">
-            {getProducts.wishListQuantity > 0 && (
+            {/* {getProducts.wishListQuantity > 0 && (
               <span className="cart-count">{getProducts.wishListQuantity}</span>
-            )}
-            <i className="far fa-heart" />
+            )} */}
+            <i className="fab fa-facebook-f" />
           </Link>
         </li>
         <li className="shopping-cart">
           <button
             className="cart-dropdown-btn"
-            onClick={() => cartHandler(true)}
+            // onClick={() => cartHandler(true)}
           >
-            <span className="cart-count">{getProducts.cartQuantityTotal}</span>
-            <i className="far fa-shopping-cart" />
+            {/* <span className="cart-count">{getProducts.cartQuantityTotal}</span> */}
+            <i className="fab fa-instagram" />
           </button>
         </li>
         <li className="my-account">
-          <button onClick={accountDropdownToggler}>
-            <i className="far fa-user" />
+          <button
+          //   onClick={accountDropdownToggler}
+          >
+            <i className="fab fa-whatsapp" />
           </button>
           <div
             className={`my-account-dropdown ${accountDropdown ? "open" : ""}`}
