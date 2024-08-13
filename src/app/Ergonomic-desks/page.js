@@ -14,24 +14,37 @@ import { TeamData } from "@/data/Team";
 import { TopProducts } from "@/data/Products";
 import { getAllPosts, getPostBySlug } from "@/utils/api";
 import ProductSeven from "@/components/product/ProductSeven";
+import WhyChoose from "@/components/why-choose/WhyChoose";
+import TestimonialOne from "@/components/testimonial/TestimonialOne";
+import ContactForm from "@/components/contact/ContactForm";
+import FAQSection from "@/components/FAQSection/FAQSection";
 
 const ErgonomicDesks = async () => {
-  const postMeta = getPostBySlug("apple-presents-app-best-of-2020-winners", [
-    "id",
-    "title",
-    "postFormat",
-    "videoUrl",
-    "audioFile",
-    "cate",
-    "featureImg",
-    "largeImg",
-    "gallery",
-    "author_name",
-    "author_img",
-    "date",
-    "views",
-    "content",
-  ]);
+  //   const postMeta = getPostBySlug("apple-presents-app-best-of-2020-winners", [
+  //     "id",
+  //     "title",
+  //     "postFormat",
+  //     "videoUrl",
+  //     "audioFile",
+  //     "cate",
+  //     "featureImg",
+  //     "largeImg",
+  //     "gallery",
+  //     "author_name",
+  //     "author_img",
+  //     "date",
+  //     "views",
+  //     "content",
+  //   ]);
+
+  const images_gallery = [
+    "/images/blog/color rubber black legs.JPG",
+    "/images/blog/E6 with black top.JPG",
+    "/images/blog/E6 wood top.JPG",
+  ];
+
+  const video_url = "https://www.youtube.com/watch?v=CZizix2-c1A";
+
   const best_products = [
     {
       id: 77,
@@ -235,7 +248,23 @@ const ErgonomicDesks = async () => {
         {/* Breadcrumb */}
         <Breadcrumb activeItem="Ergonomic Desks" title="Ergonomic Desks" />
 
-        {/* Storyboard Section */}
+        {/* סקשיין מוצרים נבחרים */}
+        <Section pClass="pb--0" borderBottom="pb--50">
+          <SectionTitle
+            title="מוצרים נבחרים"
+            subtitle="החודש"
+            subtitleIcon="far fa-shopping-basket"
+            subColor="highlighter-secondary"
+          />
+          <div className="row">
+            {best_products.map((data) => (
+              <div className="col-xl-3 col-lg-4 col-sm-6" key={data.id}>
+                <ProductSeven product={data} />
+              </div>
+            ))}
+          </div>
+        </Section>
+        {/* סקשיין תמונה וטקסט */}
         <section className="storyboard-section">
           <div className="container">
             <div className="row align-items-center">
@@ -272,7 +301,7 @@ const ErgonomicDesks = async () => {
           </div>
         </section>
 
-        {/* Photo Gallery Section */}
+        {/* סקשיין גלריית תמונות */}
         <Section pClass="photo-gallery-section">
           <div className="container">
             <SectionTitle
@@ -281,7 +310,7 @@ const ErgonomicDesks = async () => {
               subColor="highlighter-primary"
             />
             <div className="row">
-              {postMeta.gallery?.map((image, index) => (
+              {images_gallery?.map((image, index) => (
                 <div className="col-lg-3 col-md-4 col-sm-6 mb-4" key={index}>
                   <Image
                     src={image}
@@ -295,7 +324,7 @@ const ErgonomicDesks = async () => {
           </div>
         </Section>
 
-        {/* Caption */}
+        {/* טקסט סקשיין */}
         <Section pClass="caption-section">
           <div className="container text-center">
             <h3 className="caption-title">Elevate Your Workspace</h3>
@@ -306,47 +335,60 @@ const ErgonomicDesks = async () => {
           </div>
         </Section>
 
-        {/* Video Section */}
+        {/* וידאו סקשיין  */}
         <Section pClass="video-section">
           <div className="container text-center">
             <h3 className="video-title">Watch Our Product in Action</h3>
             <video controls className="w-100">
-              <source src={postMeta.videoUrl} type="video/mp4" />
+              <source src={video_url} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
         </Section>
 
-        {/* Caption */}
-        <Section pClass="caption-section">
-          <div className="container text-center">
-            <h3 className="caption-title">Crafted for Excellence</h3>
-            <p className="caption-text">
-              Our products are designed with the user in mind, ensuring both
-              comfort and productivity.
-            </p>
-          </div>
-        </Section>
+        {/* למה לבחור בנו */}
+        <WhyChoose />
 
-        {/* Top Products Section */}
-
-        <Section pClass="pb--0" borderBottom="pb--50">
-          <SectionTitle
-            title="מוצרים נבחרים"
-            subtitle="החודש"
-            subtitleIcon="far fa-shopping-basket"
-            subColor="highlighter-secondary"
-          />
-          <div className="row">
-            {best_products.map((data) => (
-              <div className="col-xl-3 col-lg-4 col-sm-6" key={data.id}>
-                <ProductSeven product={data} />
+        {/* סקשיין תמונה וטקסט */}
+        <section className="storyboard-section">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <Image
+                  src="/images/product/furniture/product-1.png" // Replace with your image path
+                  alt="Your Product"
+                  width={600}
+                  height={400}
+                  className="storyboard-image"
+                />
               </div>
-            ))}
+              <div className="col-lg-6">
+                <div className="storyboard-content">
+                  <h3 className="storyboard-title">
+                    Innovative Ergonomic Desk
+                  </h3>
+                  <p className="storyboard-text">
+                    Our ergonomic desks are designed to enhance your
+                    productivity and comfort. With adjustable height settings,
+                    premium materials, and a sleek design, this desk is the
+                    perfect addition to any workspace. Upgrade your work
+                    environment and experience the benefits of ergonomic design.
+                  </p>
+                  <Link
+                    href="/products/ergonomic-desk"
+                    className="axil-btn btn-primary"
+                  >
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
-        </Section>
+        </section>
+        {/* סקשיין פורם השאר פרטים */}
+        <ContactForm />
 
-        {/* Text Section */}
+        {/* סקשיין טקסט */}
         <Section pClass="text-section">
           <div className="container text-center">
             <h3 className="text-title">Why Choose Our Products?</h3>
@@ -392,7 +434,26 @@ const ErgonomicDesks = async () => {
           </div>
         </section> */}
 
+        {/* סקשיין לקוחות ממליצים */}
+        <TestimonialOne />
+
+        {/* סקשיין טקסט */}
+        <Section pClass="caption-section">
+          <div className="container text-center">
+            <h3 className="caption-title">Crafted for Excellence</h3>
+            <p className="caption-text">
+              Our products are designed with the user in mind, ensuring both
+              comfort and productivity.
+            </p>
+          </div>
+        </Section>
+
+        {/*סקשיין שאלות ותשובות  */}
+        <FAQSection />
+
+        {/*סקשיין שליחת פירסומים  */}
         <NewsLetter />
+
         <ServiceTwo />
       </main>
       <FooterTwo />

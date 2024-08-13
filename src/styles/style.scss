@@ -349,3 +349,54 @@ RTL Style
     }
   }
 }
+
+.faq-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-list {
+    .faq-item {
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #fff;
+
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+
+        .faq-icon {
+          font-size: 1.5rem;
+        }
+      }
+
+      .faq-answer {
+        padding: 1rem;
+        border-top: 1px solid #ddd;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+  }
+}

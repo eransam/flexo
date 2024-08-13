@@ -22,6 +22,7 @@ import ProductSeven from "@/components/product/ProductSeven";
 import WhoWeAre from "@/components/about/WhoWeAre";
 import ProductThree from "@/components/product/ProductThree";
 import ProductOne from "@/components/product/ProductOne";
+import FAQSection from "@/components/FAQSection/FAQSection";
 
 const HomeFurniture = () => {
   const pathname = usePathname();
@@ -440,6 +441,9 @@ const HomeFurniture = () => {
             ))}
           </SlickSlider>
         </Section> */}
+
+        {/* <FAQSection /> */}
+
         <NewsLetter bgImage="bg_image--6" />
         {/* <ServiceTwo /> */}
       </main>
